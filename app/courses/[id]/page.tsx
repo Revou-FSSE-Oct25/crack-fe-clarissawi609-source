@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { fetchCourseById } from '@/lib/api';
 import CourseDetailContent from '@/components/courses/course-detail-content';
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
   params,
