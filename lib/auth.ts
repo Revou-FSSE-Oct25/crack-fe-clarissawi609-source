@@ -2,7 +2,7 @@ import { AuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_URL = 'https://crack-be-production.up.railway.app';
 
 export const authOptions: AuthOptions = {
   providers: [
