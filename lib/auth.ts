@@ -3,7 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import axios from 'axios';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://crack-be-clarissawi609-source-production.up.railway.app';
-console.log('Using API URL:', API_URL);
+
 export const authOptions: AuthOptions = {
   providers: [
     CredentialsProvider({
