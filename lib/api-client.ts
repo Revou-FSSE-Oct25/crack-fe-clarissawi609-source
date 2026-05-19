@@ -38,7 +38,7 @@ interface RegisterUserResponse {
   email: string;
 }
 
-const API_URL = 'https://crack-be-production.up.railway.app';
+const API_URL = 'https://crack-be-clarissawi609-source-production.up.railway.app';
 
 const apiClient = axios.create({
   baseURL: API_URL,
