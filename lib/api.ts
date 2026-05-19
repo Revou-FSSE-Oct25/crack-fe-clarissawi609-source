@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { getSession } from 'next-auth/react';
 
-// Use a fixed API URL for debugging - change back to process.env.NEXT_PUBLIC_API_URL later
-const API_URL = 'https://crack-be-clarissawi609-source-production.up.railway.app';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://crack-be-clarissawi609-source-production.up.railway.app';
 console.log('Using API URL:', API_URL);
 
 const api = axios.create({
