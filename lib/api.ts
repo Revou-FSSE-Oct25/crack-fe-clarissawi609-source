@@ -212,7 +212,7 @@ export const registerUser = async (userData: {
   lastName?: string;
 }) => {
   try {
-    console.log('Attempting to register user at:', API_URL + '/auth/register');
+    
     const response = await api.post('/auth/register', userData);
     console.log('Registration successful:', response.data);
     return response.data;
