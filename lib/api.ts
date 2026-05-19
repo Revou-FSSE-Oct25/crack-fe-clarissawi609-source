@@ -2,8 +2,7 @@ import axios from 'axios';
 import { getSession } from 'next-auth/react';
 
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://crack-be-clarissawi609-source-production.up.railway.app';
-
+const API_URL = 'https://crack-be-clarissawi609-source-production.up.railway.app';
 
 const api = axios.create({
   baseURL: API_URL,
