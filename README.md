@@ -173,9 +173,7 @@ The application uses the following main entities:
 - `GET /admin/lessons` - Get all lessons (admin only)
 
 ---
-
-````md
-## 📊 Entity Relationship Diagram (ERD)
+tity Relationship Diagram (ERD)
 
 ```mermaid
 erDiagram
