@@ -173,7 +173,7 @@ The application uses the following main entities:
 - `GET /admin/lessons` - Get all lessons (admin only)
 
 ---
-tity Relationship Diagram (ERD)
+### Entity Relationship Diagram (ERD)
 
 ```mermaid
 erDiagram
@@ -234,6 +234,36 @@ erDiagram
     LESSON ||--o{ VIDEO_PROGRESS : "has"
     
     USER ||--o{ COURSE : "teaches"
+````
+---
+### User Flow
+
+```mermaid
+graph TD
+    %% Public Access
+    Start([Public Landing Page]) --> Browse[Browse Courses Public]
+    Browse -->|Clicks Enroll or Sign In| Auth[Auth Page: Sign In / Sign Up]
+    
+    %% Authentication Split
+    Auth -->|Authentication Success| RoleCheck{What is the<br/>user role?}
+    
+    %% Student Path
+    RoleCheck -->|student| StudentDash[Student Dashboard]
+    StudentDash --> Profile[Profile Settings & History]
+    StudentDash --> CourseDetail[Course Details Page]
+    CourseDetail -->|Clicks Watch| VideoPlayer[Video Player]
+    VideoPlayer -->|API Call| Progress[Updates Video Progress]
+
+    %% Admin / Instructor Path
+    RoleCheck -->|admin / instructor| AdminDash[Admin Dashboard]
+    AdminDash --> UserMgmt[User Management CRUD]
+    AdminDash --> CourseMgmt[Course Management CRUD]
+    AdminDash --> LessonMgmt[Lesson Management CRUD]
+
+    %% Styling for better visibility
+    style RoleCheck fill:#f9f,stroke:#333,stroke-width:2px
+    style Start fill:#bbf,stroke:#333,stroke-width:2px
+    style Progress fill:#bfb,stroke:#333,stroke-width:2px
 ````
 
 ---
