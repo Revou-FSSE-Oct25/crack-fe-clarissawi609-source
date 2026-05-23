@@ -179,7 +179,6 @@ The application uses the following main entities:
 
 ```mermaid
 erDiagram
-
     USER {
         int id PK
         string name
@@ -228,13 +227,15 @@ erDiagram
         datetime updatedAt
     }
 
-    USER ||--o{ ENROLLMENT : enrolls
-    COURSE ||--o{ ENROLLMENT : has
+    USER ||--o{ ENROLLMENT : "enrolls"
+    COURSE ||--o{ ENROLLMENT : "has"
 
-    COURSE ||--o{ LESSON : contains
+    COURSE ||--o{ LESSON : "contains"
 
-    USER ||--o{ VIDEO_PROGRESS : tracks
-    LESSON ||--o{ VIDEO_PROGRESS : has
+    USER ||--o{ VIDEO_PROGRESS : "tracks"
+    LESSON ||--o{ VIDEO_PROGRESS : "has"
+    
+    USER ||--o{ COURSE : "teaches"
 ````
 
 ---
