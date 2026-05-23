@@ -56,7 +56,7 @@ The frontend uses a comprehensive design system built with:
 - **Lesson Management**: CRUD operations for lessons
 
 ---
-
+```text
 ## 📁 Frontend and Backend Structure
 
 Mandarin-Academy/
@@ -90,7 +90,7 @@ Mandarin-Academy/
 │   └── package.json
 └── README.md
 ```
-```
+---
 ## Running the app
 
 ```bash
