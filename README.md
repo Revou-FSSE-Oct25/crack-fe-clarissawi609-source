@@ -1,5 +1,5 @@
 # Mandarin Academy
-andarin Academy Frontend is a responsive, modern web application built with **Next.js** and **Tailwind CSS**. It serves as the user-facing platform for the Mandarin Academy ecosystem, providing intuitive interfaces for both students tracking their language learning journey and administrators managing platform resources.
+Mandarin Academy Frontend is a responsive, modern web application built with **Next.js** and **Tailwind CSS**. It serves as the user-facing platform for the Mandarin Academy ecosystem, providing intuitive interfaces for both students tracking their language learning journey and administrators managing platform resources.
 Mandarin academy's web Backend is using a REST API service built with NestJS and Prisma to support a modern online Mandarin learning platform. The backend handles authentication, course management, lesson organization, user progress tracking, and admin management.
 
 ---
