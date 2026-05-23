@@ -1,6 +1,6 @@
-# Mandarin Academy Backend
-
-Mandarin Academy Backend is a REST API service built with NestJS and Prisma to support a modern online Mandarin learning platform. The backend handles authentication, course management, lesson organization, user progress tracking, and admin management.
+# Mandarin Academy
+andarin Academy Frontend is a responsive, modern web application built with **Next.js** and **Tailwind CSS**. It serves as the user-facing platform for the Mandarin Academy ecosystem, providing intuitive interfaces for both students tracking their language learning journey and administrators managing platform resources.
+Mandarin academy's web Backend is using a REST API service built with NestJS and Prisma to support a modern online Mandarin learning platform. The backend handles authentication, course management, lesson organization, user progress tracking, and admin management.
 
 ---
 ## ✨ Features
@@ -118,8 +118,11 @@ $ npm run test:cov
 ```
 ##  Deployement
 - Backend deployment: https://crack-be-clarissawi609-source-production.up.railway.app/
+  ![image alt](https://github.com/Revou-FSSE-Oct25/crack-fe-clarissawi609-source/blob/main/Images/Screenshot%202026-05-19%20203047.png?raw=true)
 - Frontend deployment: https://crack-fe-clarissawi609-source-10ki7115i.vercel.app
+  ![image alt](https://github.com/Revou-FSSE-Oct25/crack-fe-clarissawi609-source/blob/main/Images/Screenshot%202026-05-23%20225301.png?raw=true)
 - swagger api: https://crack-fe-clarissawi609-source-10ki7115i.vercel.app
+-   ![image alt](https://github.com/Revou-FSSE-Oct25/crack-fe-clarissawi609-source/blob/main/Images/Screenshot%202026-05-23%20234239.png?raw=true)
 
 
 ## 📊 Database Schema
